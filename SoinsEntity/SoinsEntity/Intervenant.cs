@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoinsEntity
+{
+    public class Intervenant
+    {
+        public string Nom { get; }
+        public string Prenom { get; }
+        public List<Prestation> LesPrestations { get; }
+
+        /// <summary>
+        /// Constructeur de la classe Intervenant
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="lesPrestations"></param>
+        public Intervenant(string nom, string prenom)
+        {
+            this.Nom = nom;
+            this.Prenom = prenom;
+        }
+        /// <summary>
+        /// Permet d'ajouter une Prestation à une collection de Prestations
+        /// </summary>
+        /// <param name="unePrestation"></param>
+        public void ajouterPrestation(Prestation unePrestation)
+        {
+            this.LesPrestations.Add(unePrestation);
+        }
+
+        public override string ToString()
+        {
+            return Nom + " - " + Prenom + " ";
+        }
+    }
+}
