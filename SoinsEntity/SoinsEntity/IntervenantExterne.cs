@@ -16,7 +16,7 @@ namespace SoinsEntity
         /// <param name="specialite"></param>
         /// <param name="adresse"></param>
         /// <param name="tel"></param>
-        public IntervenantExterne(string nom, string prenom, List<Prestation> lesPrestations, string specialite, string adresse, string tel) : base(nom, prenom)
+        public IntervenantExterne(string nom, string prenom, List<Prestation> lesPrestations, string specialite, string adresse, string tel) : base(nom, prenom, lesPrestations)
         {
             this.Specialite = specialite;
             this.Adresse = adresse;

@@ -18,7 +18,7 @@ namespace SoinsEntity
             Libelle = libelle;
             DateSoin = dateSoin;
             HeureSoin = heureSoin;
-            L_intervenant = intervenant;
+            LIntervenant = intervenant;
         }
 
         public Prestation()
@@ -28,7 +28,7 @@ namespace SoinsEntity
         public string Libelle { get; }
         public DateTime DateSoin { get; }
         public DateTime HeureSoin { get; }
-        public Intervenant L_intervenant { get; }
+        public Intervenant LIntervenant { get; }
 
         /// <summary>
         ///     Permet de comparer une date à une autre, Seulement le JOUR / MOIS / ANNEE et non les heures
@@ -39,7 +39,7 @@ namespace SoinsEntity
         /// </summary>
         /// <param name="unePrestation"></param>
         /// <returns></returns>
-        public int compareTo(Prestation unePrestation)
+        public int CompareTo(Prestation unePrestation)
         {
             if (DateSoin.Day == unePrestation.DateSoin.Day
                 && DateSoin.Month == unePrestation.DateSoin.Month

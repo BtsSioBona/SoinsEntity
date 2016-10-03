@@ -80,7 +80,7 @@ namespace SoinsEntity
         /// <returns></returns>
         public int GetNbPrestationsExternes()
         {
-            return MesPrestations.Count(p => p.L_intervenant is IntervenantExterne);
+            return MesPrestations.Count(p => p.LIntervenant is IntervenantExterne);
         }
 
         /// <summary>

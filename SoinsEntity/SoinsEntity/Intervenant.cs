@@ -16,11 +16,12 @@ namespace SoinsEntity
         /// </summary>
         /// <param name="nom"></param>
         /// <param name="prenom"></param>
-        public Intervenant(string nom, string prenom)
+        /// <param name="lesPrestations"></param>
+        public Intervenant(string nom, string prenom, List<Prestation> lesPrestations)
         {
             this.Nom = nom;
             this.Prenom = prenom;
-            //this.LesPrestations = lesPrestations;
+            this.LesPrestations = lesPrestations;
         }
         /// <summary>
         /// Permet d'ajouter une Prestation à une collection de Prestations
