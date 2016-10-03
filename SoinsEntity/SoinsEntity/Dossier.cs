@@ -8,9 +8,11 @@ namespace SoinsEntity
     /// </summary>
     public class Dossier
     {
-        public Dossier()
-        {
-        }
+        public string NomPatient { get; }
+        public string PrenomPatient { get; }
+        public DateTime DateNaissancePatient { get; }
+        public List<Prestation> MesPrestations { get; }
+        public Prestation UnePrestation { get; }
 
         /// <summary>
         ///     Constructeur de la classe Dossier
@@ -55,12 +57,6 @@ namespace SoinsEntity
             DateNaissancePatient = dateNaissancePatient;
             UnePrestation = unePrestation;
         }
-
-        public string NomPatient { get; }
-        public string PrenomPatient { get; }
-        public DateTime DateNaissancePatient { get; }
-        public List<Prestation> MesPrestations { get; }
-        public Prestation UnePrestation { get; }
 
         /// <summary>
         ///     Permet d'ajouter une Prestation à une collection de Prestations
